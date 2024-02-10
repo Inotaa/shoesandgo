@@ -1,0 +1,96 @@
+/*EN TETE BY https://codepen.io/GeorgePark/pen/PEOKyY */
+
+.blue-bg {
+  position: fixed;
+  background: url(img/uwu.png);
+  background-size: cover;
+  background-color: #58aff6;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.droite {
+
+  top: 0;
+  background-color: #dddddd;
+  min-height: 1920px;
+  margin: 210px 0px;
+  width: 1895px;
+  transform: skewY(5deg);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  margin: 350px 15vw;
+  background-color: transparent;
+}
+.content2 {
+  position: absolute;
+  top: 0;
+  margin: 1050px 15vw;
+  background-color: transparent;
+}
+
+/*FIN EN TETE*/
+
+
+H1 {
+  font-family: "Montserrat", sans-serif;
+}
+.titre{
+  text-align: center;
+  font-size: 40px;
+}
+.hyper{
+  text-decoration: none;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.prix{
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 22.5px;
+}
+
+img{
+    border-radius: 50px;
+    width: 8cm;
+    margin-right: 15px;
+
+}
+
+.shoe {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* va a la lgine quand pu de place*/
+    margin-right: 5px;
+}
+
+/* Style du bouton 'Plus' avec effet de survol */
+.buy {
+  background-color: rgb(196, 196, 196);
+  border: none;
+  padding: 7.5px 16px;
+  border-radius: 7.5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 500ms;
+}
+/*Classe parent de .Plus uniquelment pour le centrer*/
+.parent {
+  justify-content: center;
+  display: flex;
+  padding: 5px;
+}
+
+/* Effet de survol du bouton 'Plus' */
+.buy:hover {
+  background-color: #e99af5;
+}
