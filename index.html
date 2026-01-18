@@ -1,122 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Shoes And Go</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./img/iconpd.png" />  <!-- Image dans l'onglet -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ma collection LEGO Dimensions</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <div class="blue-bg"></div>
-<div class="droite"></div>
-<div class="content">
-    <main>
+  <header class="topbar">
+    <div class="topbar__left">
+      <div class="logo">🧱</div>
+      <div>
+        <h1>LEGO Dimensions — Checklist</h1>
+        <p class="muted" id="stats">Chargement…</p>
+      </div>
+    </div>
 
-        <h1 class="titre">SHOES AND GO</h1>
+    <div class="topbar__right">
+      <label class="search">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="Rechercher une licence, un pack, un numéro (ex: 71201)..." />
+      </label>
 
-        <section class="shoe"> <!-- Greoupe de meme contenu -->
-            <article> <!-- Permet de synder chaque film en un bloc -->
-                <a class="hyper" href="./paiement.html" target="_blank"> <img src="img/shoe1.png" alt="Nike Air Force 1 LV8"> 
-                    <p class="prix">99.99€                    </p><!-- Prix --> 
-                <h3>Nike Air Force 1 LV8</h3> </a> <!-- Nom chassure-->
-                <div class="parent">
-                <button class="buy">Acheter</button>
-                </div>
-            </article>
-        
-        <section class="shoe"> <!-- Greoupe de meme contenu -->
-            <article> <!-- Permet de synder chaque film en un bloc -->
-                <a class="hyper" href="./paiement.html" target="_blank"> <img src="img/shoe2.png" alt="Nike Air Max 90 Leather"> 
-                    <p class="prix">129.99€</p><!-- Prix --> 
-                <h3>Nike Air Max 90 Leather</h3> </a> <!-- Nom chassure-->
-                <div class="parent">
-                <button class="buy">Acheter</button>
-                </div>
-            </article>
+      <button id="toggleOwnedFilter" class="btn btn--ghost" type="button" aria-pressed="false">
+        Afficher : Tous
+      </button>
 
-            <section class="shoe"> <!-- Greoupe de meme contenu -->
-                <article> <!-- Permet de synder chaque film en un bloc -->
-                       <a class="hyper" href="./paiement.html" target="_blank"> <img src="img/shoe3.png" alt="Nike Pegasus Trail 4 GORE-TEX"> 
-                          <p class="prix">159.99€</p><!-- Prix --> 
-                       <h3>Nike Pegasus Trail 4 GORE-TEX</h3> </a> <!-- Nom chassure-->
-                       <div class="parent">
-                       <button class="buy">Acheter</button>
-                    </div>
-             </article>
+      <button id="resetBtn" class="btn btn--danger" type="button">
+        Reset
+      </button>
+    </div>
+  </header>
 
-                <section class="shoe"> <!-- Greoupe de meme contenu -->
-                      <section class="shoe"> <!-- Greoupe de meme contenu -->
-                        <article> <!-- Permet de synder chaque film en un bloc -->
-                            <a class="hyper" href="./paiement.html" target="_blank"> <img src="img/shoe4.png" alt="Nike Dunk Low"> 
-                                   <p class="prix">119.90€</p><!-- Prix --> 
-                            <h3>Nike Dunk Low</h3> </a> <!-- Nom chassure-->
-                              <div class="parent">
-                            <button class="buy">Acheter</button>
-                            </div>
-                       </article>
-                                     
-    </main>
-</div>
+  <main class="container">
+    <div id="content" class="content"></div>
+  </main>
 
+  <footer class="footer">
+    <p class="muted">
+      Sauvegarde locale via <code>localStorage</code>. Images : Brickset (si internet).
+    </p>
+  </footer>
 
-
-
-<div class="content2">
-    <main>
-        <section class="shoe"> <!-- Greoupe de meme contenu -->
-            <article> <!-- Permet de synder chaque film en un bloc -->
-                <a class="hyper" href="./paiement.html" target="_blank"> <img src="jordan1.png" alt="Interstellar"> 
-                    <p class="prix">109.90€</p><!-- Prix --> 
-                <h3>Air Jordan 1 Mid</h3> </a> <!-- Nom chassure-->
-                <div class="parent">
-                <button class="buy">Acheter</button>
-                </div>
-            </article>
-        
-        <section class="shoe"> <!-- Greoupe de meme contenu -->
-            <article> <!-- Permet de synder chaque film en un bloc -->
-                <a class="hyper" href="./paiement.html" target="_blank"> <img src="jordan1.png" alt="Interstellar"> 
-                    <p class="prix">109.90€</p><!-- Prix --> 
-                <h3>Air Jordan 1 Mid</h3> </a> <!-- Nom chassure-->
-                <div class="parent">
-                <button class="buy">Acheter</button>
-                </div>
-            </article>
-            <section class="shoe"> <!-- Greoupe de meme contenu -->
-                <section class="shoe"> <!-- Greoupe de meme contenu -->
-                    <article> <!-- Permet de synder chaque film en un bloc -->
-                        <a class="hyper" href="./paiement.html" target="_blank"> <img src="jordan1.png" alt="Interstellar"> 
-                            <p class="prix">109.90€</p><!-- Prix --> 
-                        <h3>Air Jordan 1 Mid</h3> </a> <!-- Nom chassure-->
-                        <div class="parent">
-                        <button class="buy">Acheter</button>
-                        </div>
-                    </article>
-                    <section class="shoe"> <!-- Greoupe de meme contenu -->
-                        <section class="shoe"> <!-- Greoupe de meme contenu -->
-                            <article> <!-- Permet de synder chaque film en un bloc -->
-                                <a class="hyper" href="./paiement.html" target="_blank"> <img src="jordan1.png" alt="Interstellar"> 
-                                    <p class="prix">109.90€</p><!-- Prix --> 
-                                <h3>Air Jordan 1 Mid</h3> </a> <!-- Nom chassure-->
-                                <div class="parent">
-                                <button class="buy">Acheter</button>
-                                </div>
-                            </article>
-                            <section class="shoe"> <!-- Greoupe de meme contenu -->
-                                     
-    </main>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
-
